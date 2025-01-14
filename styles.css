@@ -7,9 +7,7 @@ body {
   background: linear-gradient(180deg, #E4F2FA 0%, #F4F7F9 100%);
   overflow-x: hidden;
 }
-a {
-  text-decoration: dotted;
-}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -54,17 +52,20 @@ nav ul {
 
 .header .logo:hover {
   transform: scale(1.1);
+  color: #003E89;
+
 }
 
-.header .nav a {
+.header .nav {
   margin: 0 1rem;
-  font-weight: 600;
+  font-weight: 300;
   padding: 0.5rem 1rem;
   position: relative;
   display: inline-block;
+  color: #003E89;
 }
 
-.header .nav a::after {
+.header .nav::after {
   content: '';
   position: absolute;
   left: 0;
@@ -75,7 +76,7 @@ nav ul {
   transition: width 0.3s ease;
 }
 
-.header .nav a:hover::after {
+.header .nav:hover::after {
   width: 100%;
 }
 
@@ -85,11 +86,12 @@ nav ul {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: navy;
 }
 
 .header .btnn.primary {
   background: linear-gradient(90deg, #00C6C6, #003E89);
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
   box-shadow: 0 4px 15px rgba(0, 85, 210, 0.3);
 }
 
@@ -105,9 +107,14 @@ nav ul {
   clip-path: ellipse(100% 80% at 50% 20%);
 }
 .hero-subtext{
-  padding: 10px;
-  color: white;
+  padding: 20px;
+  background-color: navy;
+  color: #FFFFFF;
   border-radius: 10px;
+}
+.hero-subtext:hover{
+  color: navy;
+  background-color:transparent;
 }
 .hero-content {
   position: relative;
@@ -144,7 +151,7 @@ nav ul {
 }
 
 .features .glass {
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
   backdrop-filter: blur(15px);
   border-radius: 15px;
   padding: 2rem;
@@ -271,7 +278,7 @@ footer{
 
 .nav-link.active {
   color: #003E89;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .nav-link.btn {
